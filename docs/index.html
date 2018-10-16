@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.49.2" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Use MemSQL with Windows 10 :: My New Hugo Site</title>
+
+    
+    <link href="/css/nucleus.css?1539718771" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1539718771" rel="stylesheet">
+    <link href="/css/hybrid.css?1539718771" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1539718771" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1539718771" rel="stylesheet">
+    <link href="/css/auto-complete.css?1539718771" rel="stylesheet">
+    <link href="/css/theme.css?1539718771" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1539718771" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1539718771"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/" >Use MemSQL with Windows 10</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1539718771"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1539718771"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1539718771"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reqs/" title="1. Requirements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/reqs/">
+          1. Requirements
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docker/" title="Docker Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docker/">
+          2. Install Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/apply/" title="Run the MemSQL Docker Image" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/apply/">
+          3. Install MemSQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+
+        
+        <div id="body-inner">
+          
+
+        
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<h1 id="use-memsql-with-windows-10">Use MemSQL with Windows 10</h1>
+
+<p><a href="https://www.memsql.com">MemSQL</a> is a distributed, in-memory, SQL database that can run on any 64-bit Linux-based operating system. If you&rsquo;d like to install MemSQL on your Windows 10 development PC or Server, first you&rsquo;ll need to create a Linux environment. To do this, you have several options:</p>
+
+<ul>
+<li>Use <a href="https://www.virtualbox.org/">VirtualBox</a> to create a Linux virtual machine</li>
+<li>Use Microsoft&rsquo;s <a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/">Introduction to Hyper-V on Windows 10</a> to create a Linux virtual machine</li>
+<li>Use the MemSQL Docker image (recommended)</li>
+</ul>
+
+<p>Using the MemSQL Docker image offers a free, easy way to try out MemSQL with very little overhead and minimal system resources. This guide will help you install the MemSQL Docker image on Windows 10. To get started, first you&rsquo;ll need to make sure that your PC meets all of the <a href="/reqs/">Requirements</a>.</p>
+
+<div class="notices warning" ><p>The MemSQL Docker image should be used only for development and testing purposes.</p>
+</div>
+
+	
+  
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+        
+            <a class="nav nav-next" href="/reqs/" title="1. Requirements" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1539718771"></script>
+    <script src="/js/perfect-scrollbar.min.js?1539718771"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1539718771"></script>
+    <script src="/js/jquery.sticky.js?1539718771"></script>
+    <script src="/js/featherlight.min.js?1539718771"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1539718771"></script>
+    <script src="/js/highlight.pack.js?1539718771"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1539718771"></script>
+    <script src="/js/learn.js?1539718771"></script>
+    <script src="/js/hugo-learn.js?1539718771"></script>
+
+    <link href="/mermaid/mermaid.css?1539718771" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1539718771"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
