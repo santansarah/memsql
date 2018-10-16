@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker Overview on My New Hugo Site</title>
-    <link>http://example.org/docker/</link>
-    <description>Recent content in Docker Overview on My New Hugo Site</description>
+    <title>Docker Overview on Use MemSQL with Windows 10</title>
+    <link>https://santansarah.github.io/memsql/docker/</link>
+    <description>Recent content in Docker Overview on Use MemSQL with Windows 10</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://santansarah.github.io/memsql/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
