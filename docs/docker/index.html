@@ -12,17 +12,17 @@
     <title>Docker Overview :: Use MemSQL with Windows 10</title>
 
     
-    <link href="https://santansarah.github.io/memsql/css/nucleus.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/fontawesome-all.min.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/hybrid.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/featherlight.min.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/perfect-scrollbar.min.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/auto-complete.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/theme.css?1539790990" rel="stylesheet">
-    <link href="https://santansarah.github.io/memsql/css/hugo-theme.css?1539790990" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/nucleus.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/fontawesome-all.min.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/hybrid.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/featherlight.min.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/perfect-scrollbar.min.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/auto-complete.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/theme.css?1540143203" rel="stylesheet">
+    <link href="https://santansarah.github.io/memsql/css/hugo-theme.css?1540143203" rel="stylesheet">
     
 
-    <script src="https://santansarah.github.io/memsql/js/jquery-2.x.min.js?1539790990"></script>
+    <script src="https://santansarah.github.io/memsql/js/jquery-2.x.min.js?1540143203"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://santansarah.github.io/memsql/js/lunr.min.js?1539790990"></script>
-<script type="text/javascript" src="https://santansarah.github.io/memsql/js/auto-complete.js?1539790990"></script>
+<script type="text/javascript" src="https://santansarah.github.io/memsql/js/lunr.min.js?1540143203"></script>
+<script type="text/javascript" src="https://santansarah.github.io/memsql/js/auto-complete.js?1540143203"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="https://santansarah.github.io/memsql/js/search.js?1539790990"></script>
+<script type="text/javascript" src="https://santansarah.github.io/memsql/js/search.js?1540143203"></script>
 
     
   </div>
@@ -72,13 +72,13 @@
  
   
     
-    <li data-nav-id="/reqs/" title="1. Requirements" class="dd-item 
+    <li data-nav-id="/reqs/" title="Requirements" class="dd-item 
         
         
         
         ">
       <a href="https://santansarah.github.io/memsql/reqs/">
-          1. Requirements
+          Requirements
           
       </a>
       
@@ -100,7 +100,89 @@
         
         ">
       <a href="https://santansarah.github.io/memsql/docker/">
-          2. Install Docker
+          Use Docker
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/docker/install/" title="Install Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://santansarah.github.io/memsql/docker/install/">
+          1. Install Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/docker/config/" title="Docker Settings" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://santansarah.github.io/memsql/docker/config/">
+          2. Docker Settings
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/apply/" title="MemSQL Docker Image Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://santansarah.github.io/memsql/apply/">
+          Install MemSQL
           
       </a>
       
@@ -116,13 +198,13 @@
  
   
     
-    <li data-nav-id="/apply/" title="Run the MemSQL Docker Image" class="dd-item 
+    <li data-nav-id="/support/" title="Support" class="dd-item 
         
         
         
         ">
-      <a href="https://santansarah.github.io/memsql/apply/">
-          3. Install MemSQL
+      <a href="https://santansarah.github.io/memsql/support/">
+          Resources &amp; Support
           
       </a>
       
@@ -187,8 +269,6 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#install-docker">Install Docker</a></li>
-<li><a href="#next-steps">Next Steps</a></li>
 <li><a href="#more-about-docker">More About Docker</a></li>
 </ul>
 </nav>
@@ -211,37 +291,15 @@
 
 
 
-<p>Docker is a software container platform that enables you to run applications in a lightweight, standalone environment that&rsquo;s similar to a virtual machine. Docker images, like the MemSQL image, include everything you need to run MemSQL from the Docker client, and do not rely on any external runtimes or files located on your Windows PC. A Docker container is a running instance of a Docker image. Refer to Docker&rsquo;s <a href="https://www.docker.com/resources/what-container">What is a Container</a> for more information.</p>
+<p>Docker is a software container platform that enables you to run applications in a lightweight, standalone environment that&rsquo;s similar to a virtual machine.</p>
+
+<p>When using Docker, it&rsquo;s important to understand two key terms: Docker images and Docker containers. Docker images, like the MemSQL image, include everything you need to run an app from the Docker Engine, and do not rely on external runtimes or files located on your Windows PC. A Docker container is a running instance of a Docker image. Refer to Docker&rsquo;s <a href="https://www.docker.com/resources/what-container">What is a Container</a> for more information.</p>
 
 <!-- Docker is a software platform that enables you to build, run, and install application packages called containers. Containers include everything you need to run an app inside the Docker platform, and do not rely on any external runtimes or files located on your operating system. Container images, like the MemSQL image, are layered templates that become containers when you run them on the Docker Engine. Refer to Docker's [What is a Container](https://www.docker.com/resources/what-container) for more information. -->
 
-<h1 id="install-docker">Install Docker</h1>
-
-<p>To install Docker Community Edition for Windows:<br/>
-<em>Tech/SME Note to MemSQL: Can you use the legacy Docker Toolbox to install the MemSQL image?</em></p>
-
-<ol>
-<li>Navigate to the <a href="https://store.docker.com/editions/community/docker-ce-desktop-windows">Docker Community Edition for Windows</a> download page.</li>
-<li>Click &ldquo;Please Login To Download.&rdquo;
-<img src="https://santansarah.github.io/memsql/docker1.png" alt="Docker Login" /></li>
-<li>On the &ldquo;Welcome to Docker&rdquo; page, login with your Docker ID or create a new account.</li>
-<li>If you created a new account, check your email and click the link provided to verify your email address. This should return you to the <a href="https://store.docker.com/editions/community/docker-ce-desktop-windows">Docker Community Edition for Windows</a> download page. Now that your account is verified, you&rsquo;ll need to login to enable the download.</li>
-<li>Once you&rsquo;re logged in, click &ldquo;Get Docker&rdquo; to download the installation file from the <a href="https://store.docker.com/editions/community/docker-ce-desktop-windows">Docker Community Edition for Windows</a> download page.
-<img src="https://santansarah.github.io/memsql/docker2.png" alt="Get Docker" /></li>
-<li>After the installation file downloads, run &ldquo;Docker for Windows Installer.exe&rdquo; from your browser.</li>
-</ol>
-
-<p>By default, Docker will create a separate environment on your PC that&rsquo;s similar to a Linux virtual machine. This environment is automatically assigned a unique IP address, and is accessible from the Windows command prompt and your Windows 10 browser.</p>
-
-<h1 id="next-steps">Next Steps</h1>
-
-<p>Now that the Docker platform is running, you&rsquo;re ready to <a href="https://santansarah.github.io/memsql/apply/">Install MemSQL</a>.</p>
-
 <h1 id="more-about-docker">More About Docker</h1>
 
-<p>Many popular apps are available as Docker containers, including Node.js, Jenkins, and WordPress. For a more comprehensive list, you can visit <a href="https://hub.docker.com/">Docker Hub</a> to explore 100,000+ free apps and public and private registries.</p>
-
-<p>When you install Docker on Windows 10, you have the option to switch between Windows or Linux containers. For a complete list of Docker Community Edition for Windows features, refer to Docker&rsquo;s <a href="https://docs.docker.com/docker-for-windows/">Get started with Docker for Windows</a>.</p>
+<p>Many popular apps are available as Docker containers, including Node.js, Jenkins, and WordPress. For a more comprehensive list, visit <a href="https://hub.docker.com/">Docker Hub</a> to explore 100,000+ free apps and public and private registries.</p>
 
 
 <footer class=" footline" >
@@ -304,11 +362,10 @@
 
                     
                     
+                        
+                    
                     
 
-                    
-            
-        
                     
                         
             
@@ -329,6 +386,57 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -336,10 +444,10 @@
 
 
         
-            <a class="nav nav-prev" href="https://santansarah.github.io/memsql/reqs/" title="1. Requirements"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://santansarah.github.io/memsql/reqs/" title="Requirements"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="https://santansarah.github.io/memsql/apply/" title="Run the MemSQL Docker Image" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="https://santansarah.github.io/memsql/docker/install/" title="Install Docker" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -348,20 +456,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://santansarah.github.io/memsql/js/clipboard.min.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/perfect-scrollbar.min.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/perfect-scrollbar.jquery.min.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/jquery.sticky.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/featherlight.min.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/html5shiv-printshiv.min.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/highlight.pack.js?1539790990"></script>
+    <script src="https://santansarah.github.io/memsql/js/clipboard.min.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/perfect-scrollbar.min.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/perfect-scrollbar.jquery.min.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/jquery.sticky.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/featherlight.min.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/html5shiv-printshiv.min.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/highlight.pack.js?1540143203"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://santansarah.github.io/memsql/js/modernizr.custom.71422.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/learn.js?1539790990"></script>
-    <script src="https://santansarah.github.io/memsql/js/hugo-learn.js?1539790990"></script>
+    <script src="https://santansarah.github.io/memsql/js/modernizr.custom.71422.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/learn.js?1540143203"></script>
+    <script src="https://santansarah.github.io/memsql/js/hugo-learn.js?1540143203"></script>
 
-    <link href="https://santansarah.github.io/memsql/mermaid/mermaid.css?1539790990" type="text/css" rel="stylesheet" />
-    <script src="https://santansarah.github.io/memsql/mermaid/mermaid.js?1539790990"></script>
+    <link href="https://santansarah.github.io/memsql/mermaid/mermaid.css?1540143203" type="text/css" rel="stylesheet" />
+    <script src="https://santansarah.github.io/memsql/mermaid/mermaid.js?1540143203"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

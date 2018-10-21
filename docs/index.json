@@ -1,0 +1,64 @@
+[
+{
+	"uri": "https://santansarah.github.io/memsql/reqs/",
+	"title": "Requirements",
+	"tags": [],
+	"description": "",
+	"content": "To use Docker Community Edition for Windows and install the MemSQL Docker image, your PC or Server must meet the following requirements:\n Windows 10 64bit: Pro, Enterprise, or Education  (1607 Anniversary Update, Build 14393 or later) Meet all of Microsoft\u0026rsquo;s Windows 10 Hyper-V System Requirements 4 CPU cores 4GB of RAM  VirtualBox/VM Users: When you Install Docker, it will automatically enable Windows 10 Hyper-V on your PC. Once Hyper-V is enabled, VirtualBox will no longer work. Refer to Docker\u0026rsquo;s Install Docker for Windows for more information.\n\rIf you meet all of these requirements, you\u0026rsquo;re ready to Install Docker. For additional installation options, refer to the following MemSQL guides:\n Quick Start On-Premises Quick Start with Amazon Webservices Quick Start with Microsoft Azure  "
+},
+{
+	"uri": "https://santansarah.github.io/memsql/docker/",
+	"title": "Docker Overview",
+	"tags": [],
+	"description": "",
+	"content": " Docker is a software container platform that enables you to run applications in a lightweight, standalone environment that\u0026rsquo;s similar to a virtual machine.\nWhen using Docker, it\u0026rsquo;s important to understand two key terms: Docker images and Docker containers. Docker images, like the MemSQL image, include everything you need to run an app from the Docker Engine, and do not rely on external runtimes or files located on your Windows PC. A Docker container is a running instance of a Docker image. Refer to Docker\u0026rsquo;s What is a Container for more information.\nMore About Docker Many popular apps are available as Docker containers, including Node.js, Jenkins, and WordPress. For a more comprehensive list, visit Docker Hub to explore 100,000+ free apps and public and private registries.\n"
+},
+{
+	"uri": "https://santansarah.github.io/memsql/docker/install/",
+	"title": "Install Docker",
+	"tags": [],
+	"description": "",
+	"content": " Before you begin, make sure to save all of your work and close all of your apps. You\u0026rsquo;ll need to sign out of Windows when the Docker installation completes. If Hyper-V is not enabled, you\u0026rsquo;ll also need to restart your PC.\n\rTo install Docker Community Edition for Windows:\n Navigate to the Docker Community Edition for Windows download page. Click \u0026ldquo;Please Login To Download.\u0026rdquo;  On the \u0026ldquo;Welcome to Docker\u0026rdquo; page, login with your Docker ID or create a new account. If you created a new account, check your email and click the link provided to verify your email address. This should return you to the Docker Community Edition for Windows download page. Now that your account is verified, you\u0026rsquo;ll need to login to enable the download. Once you\u0026rsquo;re logged in, click \u0026ldquo;Get Docker\u0026rdquo; to download the installation file from the Docker Community Edition for Windows download page.  After the installation file downloads, run \u0026ldquo;Docker for Windows Installer.exe\u0026rdquo; from your browser. On the Configuration window, do not check \u0026ldquo;Use Windows containers instead of Linux containers.\u0026rdquo; You\u0026rsquo;ll need a Linux environment to run MemSQL. Refer to Get started with Docker for Windows - Switch between Windows and Linux containers for more information. Click \u0026ldquo;Ok\u0026rdquo; to continue.  Docker will start \u0026ldquo;Unpacking files.\u0026rdquo; On the \u0026ldquo;Installation succeeded\u0026rdquo; window, click \u0026ldquo;Close and log out.\u0026rdquo; This will sign you out of Windows.  If \u0026ldquo;Hyper-V and Containers features are not enabled,\u0026rdquo; click \u0026ldquo;Ok.\u0026rdquo; Windows will enable these features, and your PC will automatically restart. This step can take a few minutes to complete.  When you sign back in, Docker should be up and running. On the Welcome window near your system tray, enter your Docker ID and Password, then click Log In. If Docker doesn\u0026rsquo;t start automatically, refer to Start Docker for Windows for more information.  Next Steps Before you install the MemSQL image, first you need to update your Docker Settings.\n"
+},
+{
+	"uri": "https://santansarah.github.io/memsql/docker/config/",
+	"title": "Docker Settings",
+	"tags": [],
+	"description": "",
+	"content": " To run the MemSQL image, Docker needs to have access to a minimum of 4 CPU cores and 4GB of RAM on your PC. To update your Docker settings:\n Right click the Docker icon from your system tray, then click Settings.  Click Advanced. Set Docker\u0026rsquo;s CPUs to 4, and increase the memory to at least 4096MB (required). Then click Apply. Make sure to leave enough resources for Windows. Otherwise, you may experience out of memory exceptions and slow performance when you\u0026rsquo;re running Docker containers. Refer to Docker\u0026rsquo;s Limit a container\u0026rsquo;s resources for more information.\n\r  To configure additional settings, refer to Docker\u0026rsquo;s Docker Settings dialog.\nNext Steps Now that Docker is configured, you\u0026rsquo;re ready to Install MemSQL.\n"
+},
+{
+	"uri": "https://santansarah.github.io/memsql/apply/",
+	"title": "MemSQL Docker Image Overview",
+	"tags": [],
+	"description": "",
+	"content": " The MemSQL Docker image includes a single-node MemSQL cluster with one master agregator and one leaf, along with a benchmarking program to test MemSQL performance. For more information on MemSQL\u0026rsquo;s architecture, refer to MemSQL\u0026rsquo;s Concepts Overview.\nCheck System Requirements Before you create your MemSQL cluster, first you need to verify your system requirements. Open your Windows command prompt, and type the following:\ndocker run --rm memsql/quickstart check-system  Docker will check your local images first, then automatically download (pull) the MemSQL image from the Docker repository. Once the MemSQL image is downloaded, it will run a system check. If the MemSQL system test fails, you won\u0026rsquo;t be able to run the MemSQL container. Refer to Requirements for more information and alternative installation options. "
+},
+{
+	"uri": "https://santansarah.github.io/memsql/support/",
+	"title": "Support",
+	"tags": [],
+	"description": "",
+	"content": "For MemSQL Support:\n Search MemSQL Documentation Visit the MemSQL Help Center Chat live on the memsql-public Slack Channel  "
+},
+{
+	"uri": "https://santansarah.github.io/memsql/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://santansarah.github.io/memsql/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://santansarah.github.io/memsql/",
+	"title": "Use MemSQL with Windows 10",
+	"tags": [],
+	"description": "",
+	"content": " Use MemSQL with Windows 10 MemSQL is a distributed, in-memory, SQL database that can run on any 64-bit Linux-based operating system. If you\u0026rsquo;d like to install MemSQL on your Windows 10 development PC, first you\u0026rsquo;ll need to create a Linux environment. To do this, you have several options:\n Use VirtualBox to create a Linux virtual machine Use Microsoft\u0026rsquo;s Introduction to Hyper-V on Windows 10 to create a Linux virtual machine Use the MemSQL Docker image (recommended)  Using the MemSQL Docker image offers a free, easy way to try out MemSQL with very little overhead and minimal system resources. This guide will help you install the MemSQL Docker image on Windows 10. To get started, first you\u0026rsquo;ll need to make sure that your PC meets all of the Requirements.\nThe MemSQL Docker image should be used only for development and testing purposes.\n\r"
+}]

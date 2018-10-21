@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="https://santansarah.github.io/memsql/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="https://santansarah.github.io/memsql/images/favicon.png" type="image/x-icon" />
-    <title>MemSQL Docker Image Overview :: Use MemSQL with Windows 10</title>
+    <title>Docker Settings :: Use MemSQL with Windows 10</title>
 
     
     <link href="https://santansarah.github.io/memsql/css/nucleus.css?1540143203" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/apply/">
+  <body class="" data-url="/docker/config/">
     <nav id="sidebar" class="">
 
 
@@ -95,7 +95,7 @@
   
     
     <li data-nav-id="/docker/" title="Docker Overview" class="dd-item 
-        
+        parent
         
         
         ">
@@ -146,8 +146,8 @@
   
     
     <li data-nav-id="/docker/config/" title="Docker Settings" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="https://santansarah.github.io/memsql/docker/config/">
@@ -177,8 +177,8 @@
   
     
     <li data-nav-id="/apply/" title="MemSQL Docker Image Overview" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="https://santansarah.github.io/memsql/apply/">
@@ -257,7 +257,13 @@
             
           
           
-            <a href='https://santansarah.github.io/memsql/'>Use MemSQL with Windows 10</a> > MemSQL Docker Image Overview
+            
+            
+          
+          
+            <a href='https://santansarah.github.io/memsql/'>Use MemSQL with Windows 10</a> > <a href='https://santansarah.github.io/memsql/docker/'>Docker Overview</a> > Docker Settings
+          
+         
           
          
           
@@ -269,7 +275,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#check-system-requirements">Check System Requirements</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
 </ul>
 </nav>
     </div>
@@ -283,7 +289,7 @@
         
         <div id="body-inner">
           
-            <h1>MemSQL Docker Image Overview</h1>
+            <h1>Docker Settings</h1>
           
 
         
@@ -291,40 +297,23 @@
 
 
 
-<p>The MemSQL Docker image includes a single-node MemSQL cluster with one master agregator and one leaf, along with a benchmarking program to test MemSQL performance. For more information on MemSQL&rsquo;s architecture, refer to MemSQL&rsquo;s <a href="https://docs.memsql.com/concepts/v6.5/concepts-overview/">Concepts Overview</a>.</p>
+<p>To run the MemSQL image, Docker needs to have access to a minimum of 4 CPU cores and 4GB of RAM on your PC. To update your Docker settings:</p>
 
-<h1 id="check-system-requirements">Check System Requirements</h1>
+<ol>
+<li>Right click the Docker icon from your system tray, then click Settings.
+<img src="https://santansarah.github.io/memsql/docker7.png" alt="Configure Docker" /></li>
+<li>Click Advanced. Set Docker&rsquo;s CPUs to 4, and increase the memory to at least 4096MB (required). Then click Apply.
+<div class="notices warning" ><p>Make sure to leave enough resources for Windows. Otherwise, you may experience out of memory exceptions and slow performance when you&rsquo;re running Docker containers. Refer to Docker&rsquo;s <a href="https://docs.docker.com/config/containers/resource_constraints/">Limit a container&rsquo;s resources</a> for more information.</p>
+</div>
 
-<p>Before you create your MemSQL cluster, first you need to verify your system requirements. Open your Windows command prompt, and type the following:</p>
+<img src="https://santansarah.github.io/memsql/docker8.png" alt="Configure Docker" /></li>
+</ol>
 
-<pre><code>docker run --rm memsql/quickstart check-system
-</code></pre>
+<p>To configure additional settings, refer to Docker&rsquo;s <a href="https://docs.docker.com/docker-for-windows/#docker-settings-dialog">Docker Settings dialog</a>.</p>
 
-<p>Docker will check your local images first, then automatically download (pull) the MemSQL image from the Docker repository.
-<img src="https://santansarah.github.io/memsql/docker9.png" alt="Docker Client" />
-Once the MemSQL image is downloaded, it will run a system check. If the MemSQL system test fails, you won&rsquo;t be able to run the MemSQL container. Refer to <a href="https://santansarah.github.io/memsql/reqs/">Requirements</a> for more information and alternative installation options.
-<img src="https://santansarah.github.io/memsql/docker10.png" alt="Docker Client" /></p>
+<h1 id="next-steps">Next Steps</h1>
 
-<!--
-
-# Run the MemSQL Docker Image
-
-Now spin up the MemSQL cluster on your machine by running docker run. The memsql/quickstart image will be downloaded first if it is not already on your machine. In order to connect to the web interface, you must expose port 9000 to your local machine, and to connect to the database, port 3306 must also be exposed.
-
-$ docker run -d -p 3306:3306 -p 9000:9000 --name memsqlcontainer memsql/quickstart
-
-# Access MemSQL Ops 
-
-Finally visit the MemSQL Ops web interface (requires Firefox or Google Chrome):
-
-$ open "http://localhost:9000"
-You should see the following:
-
-# Next Steps
-
-For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start with Docker" guide, and navigate to the [Using Persistent Storage with your Container (Optional)](https://docs.memsql.com/quickstarts/v6.5/quick-start-with-docker/#using-persistent-storage-with-your-container-optional) section.
-
--->
+<p>Now that Docker is configured, you&rsquo;re ready to <a href="https://santansarah.github.io/memsql/apply/">Install MemSQL</a>.</p>
 
 
 <footer class=" footline" >
@@ -381,6 +370,7 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
             
                 
                     
+                    
                 
                 
 
@@ -395,6 +385,9 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -412,6 +405,7 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
             
                 
                     
+                    
                 
                 
 
@@ -422,23 +416,6 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -462,6 +439,22 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -469,10 +462,10 @@ For tips on using the MemSQL Docker container, refer to MemSQL's "Quick Start wi
 
 
         
-            <a class="nav nav-prev" href="https://santansarah.github.io/memsql/docker/config/" title="Docker Settings"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://santansarah.github.io/memsql/docker/install/" title="Install Docker"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="https://santansarah.github.io/memsql/support/" title="Support" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="https://santansarah.github.io/memsql/apply/" title="MemSQL Docker Image Overview" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
